@@ -1,0 +1,51 @@
+@font-face {
+    font-family: PokemonGen3Battle;
+    src: url(styles/fonts/pokemon-gen3-battle.otf);
+}
+
+body {
+    background-color: #FF8896;
+}
+
+li {
+    color: #FFDEE3;
+    text-align; center;
+}
+
+#wrapper {
+    background: #C00000;
+    border: solid 5px #FFDEE3;
+    width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center; 
+}
+
+img {
+    width: 300px;
+}
+
+#title {
+    color: #FFDEE3;
+    font-family: PokemonGen3Battle;
+    font-size: 30px;
+}
+
+.heading {
+    color: #FFBBC1;
+    font-family: PokemonGen3Battle;
+}
+
+p {
+    color: #FFDEE3;
+    font-family: PokemonGen3Battle;
+    font-size: 20px;
+}
+
+footer {
+    color: #FFDEE3;
+    font-family: PokemonGen3Battle;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}

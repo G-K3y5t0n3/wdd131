@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Feed Sign Up</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+
+        body{
+            background:rgb(120, 96, 64);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #wrapper{
+            background: white;
+            border: solid 10px #0d2e7c;
+            border-radius: 10px;
+            text-align: center;
+            width: 500px; 
+            height: 100%;
+        }
+
+        .signup-header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .signup-header img {
+            width: 500px;
+            height: 100%;
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+        }
+
+        .signup-header-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 22px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        h3 {
+           padding: 10px; 
+        }
+
+        #form-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 10px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        #checkbox1 {
+            padding: 10px;
+        }
+
+        #checkbox2 {
+            padding: 10px;
+        }
+
+        #submit {
+            padding: 10px;
+        }
+
+        .footer{
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer img{
+            height: 125px;
+            width: 100%;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div class="signup-header">
+            <img src="images/jesus_feeds_5000.jpeg" alt="Daily Scripture Image">
+            <div class="signup-header-text">
+                Daily Feed <br> Scripture a Day
+            </div>
+        </div>
+
+        <h3>Sign Up for Daily Scripture Feed</h3>
+
+        <form>
+            <div id="form-box">
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username" required>
+            
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label>Gender:</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <section id="checkbox1">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to newsletter</label>
+            </section>
+
+            <section id="checkbox2">
+                <input type="checkbox" id="conditions" name="conditions" required>
+                <label for="conditions">I acknowledge the terms and conditions</label>
+            </section>
+
+            <section id="submit">
+                <button type="submit">Submit</button>
+            </section>        
+        </form>
+
+        <div class="footer">
+            <img src="images/old_testament.webp">
+            <img src="images/new_testament.webp">
+            <img src="images/book_of_mormon.webp">
+            <img src="images/doctrine_and_covenants.webp">
+            <img src="images/pearl_of_great_price.webp">
+        </div>
+    </div>
+    
+</body>
+</html>

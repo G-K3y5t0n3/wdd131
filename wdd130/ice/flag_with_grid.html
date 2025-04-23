@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag</title>
+    <style>
+        body {
+            background: gray;
+        }
+        
+        #chile {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+            width: 300px;
+        }
+
+        #white {
+            background: white;
+            grid-column: 2 / 4;
+        }
+
+        #red {
+            background: #ea3323;
+            grid-column: 1 / 4;
+        }
+
+        #blue {
+            background: #0000f5;
+            grid-column: 1 / 2;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .star {
+            width: 70px;
+            aspect-ratio: 1;
+            background: white;
+            clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+        }
+
+        #denmark {
+            display: grid;
+            grid-template-columns: 90px 1fr 90px 90px;
+            grid-template-rows: 85px 1fr 85px;
+            height: 200px;
+            width: 300px;
+            background-color: white;
+        }
+
+        #dred1 {
+            background: #ea3323;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        #dred2 {
+            background: #ea3323;
+            grid-column: 3/5;
+            grid-row: 1/2;
+        }
+
+        #dred3 {
+            background: #ea3323;
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        #dred4 {
+            background: #ea3323;
+            grid-column: 3/5;
+            grid-row: 3/4;
+        }
+
+        #finland {
+            display: grid;
+            grid-template-columns: 85px 1fr 85px 85px;
+            grid-template-rows: 80px 1fr 80px;
+            height: 200px;
+            width: 300px;
+            background-color: #0000f5;
+        }
+
+        #fwhite1 {
+            background: white;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        #fwhite2 {
+            background: white;
+            grid-column: 3/5;
+            grid-row: 1/2;
+        }
+
+        #fwhite3 {
+            background: white;
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        #fwhite4 {
+            background: white;
+            grid-column: 3/5;
+            grid-row: 3/4;
+        }
+
+        #benin {
+            display: grid;
+            grid-template-columns: 110px 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+            width: 300px;
+            background-color: #377e22;
+        }
+
+        #byellow {
+            background-color: yellow;
+            grid-column: 2/4;
+        }
+
+        #bred {
+            background-color: red;
+            grid-column: 2/4
+        }
+
+        #italy {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            height: 200px;
+            width: 300px;
+            background-color: #009344;
+        }
+
+        #iwhite {
+            background-color: white;
+            grid-column: 2/3;
+        }
+
+        #ired {
+            background-color: #cf2734;
+            grid-column: 3/4;
+        }
+
+        #car {
+            display: grid;
+            grid-template-columns: repeat(14, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            height: 200px;
+            width: 300px;
+            background-color: #002c83;
+        }
+
+        #carstarframe {
+            grid-column: 2/5;
+            grid-row: 1/2;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .carstar {
+            width: 40px;
+            aspect-ratio: 1;
+            background: #ffcc00;
+            clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+        }
+
+        #carwhite {
+            background-color: white;
+            grid-column: 1/15;
+            grid-row: 2/3;
+        }
+
+        #cargreen {
+            background-color: #239823;
+            grid-column: 1/15;
+            grid-row: 3/4;
+        }
+
+        #caryellow {
+            background-color: #ffcc00;
+            grid-column: 1/15;
+            grid-row: 4/5;
+        }
+
+        #carred {
+            background-color: #d30731;
+            grid-column: 7/9;
+            grid-row: 1/5; 
+        }
+
+        #japan {
+            display: grid;
+            place-items: center; /* Center sun */
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .jsun {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Chile</h2>
+    <div id="chile">
+        <div id="blue">
+            <div class="star"></div>
+        </div>
+        <div id="white"></div>
+        <div id="red"></div>
+    </div>
+    <hr>
+    <h2>Denmark</h2>
+    <div id="denmark">
+        <div id="dred1"></div>
+        <div id="dred2"></div>
+        <div id="dred3"></div>
+        <div id="dred4"></div>
+    </div>
+
+    <hr>
+    <h2>Finland</h2>
+    <div id="finland">
+        <div id="fwhite1"></div>
+        <div id="fwhite2"></div>
+        <div id="fwhite3"></div>
+        <div id="fwhite4"></div>
+    </div>
+    <hr>
+    <h2>Benin</h2>
+    <div id="benin">
+        <div id="byellow"></div>
+        <div id="bred"></div>
+    </div>
+    <hr>
+    <h2>Italy</h2>
+    <div id="italy">
+        <div id="iwhite"></div>
+        <div id="ired"></div>
+    </div>
+    <hr>
+    <h2>Central African Republic</h2>
+    <div id="car">
+        <div id="carstarframe">
+            <div class="carstar"></div>
+        </div>   
+        <div id="carwhite"></div>
+        <div id="cargreen"></div>
+        <div id="caryellow"></div>
+        <div id="carred"></div>
+    </div>
+    <hr>
+    <h2>Japan (added it bc why not)</h2>
+        <div id="japan">
+            <div class="jsun"></div>
+        </div>
+</body>
+</html>
