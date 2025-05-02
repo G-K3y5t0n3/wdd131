@@ -1,0 +1,64 @@
+@font-face {
+    font-family:ASAP_Bold;
+    src: url(fonts/Asap-Bold.otf);
+}
+
+@font-face {
+    font-family:Galleon;
+    src: url(fonts/galleon.ttf);
+}
+
+@font-face {
+    font-family:Roadgeek;
+    src: url(fonts/roadgeek\ 2000\ series\ e.ttf);
+}
+
+@font-face {
+    font-family:Roadgeek_Heavy;
+    src: url(fonts/roadgeek\ transport\ heavy.ttf);
+}
+
+body {
+    background: #5ca0d7;
+}
+
+#wrapper {
+    background: #cd5c5c;
+    border: solid 3px white;
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center; 
+}
+
+#title {
+    color: white;
+    font-family: ASAP_Bold;
+}
+
+#quote {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#quote_source {
+    color: white;
+    font-family: Roadgeek_Heavy;
+}
+
+.aof {
+    color: black;
+    font-family: Roadgeek_Heavy;
+    letter-spacing: -1.5px;
+    font-weight: 900;
+}
+
+img {
+    height: 200px
+}
+
+#quotetwo {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+}
