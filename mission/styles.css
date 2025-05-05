@@ -1,5 +1,5 @@
 body {
-    background: white;
+    background: #333;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
@@ -18,7 +18,7 @@ body {
 }
 
 #subtitle {
-    color: #006EB6;
+    color: somecolor;
 }
 
 hr {
