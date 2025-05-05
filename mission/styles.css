@@ -1,7 +1,12 @@
 body {
-    background: #333;
+    background: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+}
+
+.dark {
+    background: black;
+    color: white;
 }
 
 #wrapper {
@@ -13,7 +18,6 @@ body {
 }
 
 #title {
-    color: black;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -36,7 +40,6 @@ hr {
 }
 
 .list {
-    color: black;
     font-family: 'Times New Roman', Times, serif
     letter-spacing: -1.5px;
     text-align: left;
@@ -44,10 +47,4 @@ hr {
 
 img {
     height: 150px
-}
-
-#quotetwo {
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 200%;
 }
