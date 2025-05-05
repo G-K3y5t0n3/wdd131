@@ -19,4 +19,5 @@ function changeTheme() {
         // change the image back to original
         logo.src = 'images/byui-logo_blue.jpg';
     }
+    
 }
