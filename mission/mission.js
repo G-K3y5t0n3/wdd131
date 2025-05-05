@@ -11,13 +11,12 @@ function changeTheme() {
         document.body.classList.add('dark')
         // add different image by changing src
         logo.src = 'images/byui-logo_white.jpg';
+    }
 
-
-    } else {
+    else {
         // take off class
         document.body.classList.remove("dark");
         // change the image back to original
         logo.src = 'images/byui-logo_blue.jpg';
-
     }
 }
