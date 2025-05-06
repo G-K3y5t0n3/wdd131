@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+:root {
+    --primary-color: #52499c;
+    --secondary-color: #ebebeb;
+    --accent-color: #f45b69;
+    --text-dark: #070707;
+    --text-light: #eaeaf6;
+    --primary-font: Mooli;
+    --secondary-font: Arial, Helvetica, sans-serif;
+    }
+
+header {
+    background: var(--primary-color);
+    color: var(--text-light);   
+    font: var(--primary-font);
+}
+
+body {
+    background: var(--secondary-color);
+}
+
+img {
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
