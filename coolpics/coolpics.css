@@ -77,4 +77,19 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
       }
+
+    header button{
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    a {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
