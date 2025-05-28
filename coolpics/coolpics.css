@@ -32,11 +32,11 @@ button {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .menu {
-    display: none;
+    display: flex;
     flex-direction: column;
 }
 
