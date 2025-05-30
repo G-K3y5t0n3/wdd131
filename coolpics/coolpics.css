@@ -28,6 +28,19 @@ dialog {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .6);
+    align-content: center;
+}
+
+dialog button {
+    display: block;
+    margin-left: 63%;
+
+}
+
+dialog img {
+    border: 0px;
+    max-width: 100%;
+    justify-content: center;
 }
 
 button {
@@ -55,7 +68,7 @@ h2 {
 }
 
 
-img {
+figure img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -67,8 +80,7 @@ img {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
-dialog img {
-}
+
 
 footer{
     background: var(--primary-color);
