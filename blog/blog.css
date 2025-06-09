@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+:root {
+    --primary-color: #EFC69B;
+    --secondary-color: #AF1B3F;
+    --accent-color: #473144;
+    --text-dark: #070707;
+    --text-light: #eaeaf6;
+    --primary-font: Helvetica, Arial, sans-serif;
+    --secondary-font: Arial, Helvetica, sans-serif;
+    --headline-font: Lora, Impact, serif;
+    }
+
+header h1 {
+    color: var(--accent-color);
+    text-align: center;
+}
+
+nav {
+    display: grid;
+    text-align: right;
+    border-top: var(--primary-color);
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-bottom: var(--primary-color);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+.skiptocontent {
+    display: hide;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#bookReviews {
+    justify-items: start;
+}
+
+#books {
+    justify-items: center;
+}
+
+#filters {
+    justify-items: center;
+}
