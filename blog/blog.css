@@ -26,8 +26,18 @@ nav {
     border-bottom-width: 2px;
 }
 
+ul {
+    padding-right: 10px;
+}
+
+ul a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 10px;
+}
+
 .skiptocontent {
-    display: hide;
+    display: none;
 }
 
 main {
@@ -35,14 +45,25 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-#bookReviews {
+.bookReviews {
+    justify-items: end;
+    padding: 10px;
+    border-right: var(--primary-color) 2px solid;
+    margin-top: 10px;
+    grid-column: 1/2;
+}
+
+.books {
+    justify-items: center;
+    padding: 10px;
+    grid-column: 2/3;
+}
+
+.filters {
     justify-items: start;
-}
-
-#books {
-    justify-items: center;
-}
-
-#filters {
-    justify-items: center;
+    padding: 10px;
+    border-left: var(--primary-color) 2px solid;
+    margin-top: 10px;
+    grid-column: 3/4;
+    grid-row: 1/2;
 }
