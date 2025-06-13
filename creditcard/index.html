@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div id="cCard">
+  <div class="cCard">
     <!-- Credit Card Front -->
     <div class="cCard-front">
       <p class="ttp">Total: $199</p>
@@ -19,30 +19,37 @@
         height="55px"
         >
       <!---->
-      <p class="n-label">Card Number</p>
-       <input type="text" class="card-number" placeholder="1234 5678 9101 1112">
+      <div id="card-number">
+        <p class="n-label">Card Number</p>
+        <input type="text" id="card-number" placeholder="1234 5678 9101 1112">
+      </div>
+       <!---->
+      <div id="card-holder">
+        <p>Card Holder</p>
+        <!-- <input type="text" class="cCard-HN" placeholder="Moe Lester"> -->
+        <input type="text" id="card-holder" placeholder="John Doe">
+      </div>
       <!---->
-      <p class="h-label">Card Holder</p>
-      <!-- <input type="text" class="cCard-HN" placeholder="Moe Lester"> -->
-      <input type="text" id="holder-name" placeholder="John Doe">
-      <!---->
-      <p class="e-label">Expiration</p>
-      <input type="text" class="e-month" placeholder="MM">
-      <input type="text" class="e-day" placeholder="DD">
+      <div id="card-expiration">
+        <p>Expiration</p>
+        <div id="e-input">
+          <input type="text" id="e-month" placeholder="MM">
+          <input type="text" id="e-day" placeholder="DD">
+        </div>
+      </div>  
     </div>
 
     <!-- Credit Card Back -->
     <div class="cCard-back">
-      <div id="cCard-bar"></div>
+      <div id="card-bar"></div>
       <!---->
-      <div class="CVC/CVV">
+      <div id="CVCandCVV">
         <p>CVC/CVV</p>
-        <input type="text" class="" placeholder="xxx">
+        <input type="text" id="cvcCVV" placeholder="xxx">
       </div>
     </div>
+    <button>Submit</button>
   </div>
-  
-  <button>Submit</button>
 
 </body>
 
