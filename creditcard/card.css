@@ -61,7 +61,7 @@ input {
   justify-self: end;
 }
 
-#card-number {
+#card-number-holder {
   grid-column: 1/3;
   grid-row: 2/3;
 }
