@@ -140,4 +140,43 @@ footer a {
     font-family: var(--secondary-font);
     font-size: 75px;
 }
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#input-bar input{
+    height: 19px;
+    width: 100%;
+}
+
+main img {
+    width: 50%;
+}
+
+.main-detail {
+    display: flex;
+}
+
+.laptop-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-left: 25px;
+}
+
+footer {
+    flex-direction: row-reverse;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 525;
+    padding-right: 45.9%;
+}
+
 }
