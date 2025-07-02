@@ -295,18 +295,17 @@ function getRandomListEntry(list) {
 
 function recipeTemplate(recipe) {
 	return `<div class="main-detail">
-            <img src="images/apple-crisp.jpg">
+            <img src=${recipe.image}>
             <div class="laptop-column">
                 <div class="food-categories">
-                    <p>dessert</p>
-                    <p>tag2</p>
+                    ${tagsTemplate(recipe.tags)}
                 </div>
                 
                 <div class="recipe-description">
-                    <p id="title">Recipe Title</p>
-                    <p>*****</p>
-                    <p>Recipe description</p>
-                </div>
+                    <p id="title">${recipe.name}</p>
+                    <p>${ratingTemplate(recipe.rating)}</p>
+					<p>${recipe.description}</p>
+				</div>
             </div>
         </div>`;
 }
@@ -346,4 +345,60 @@ function ratingTemplate(rating) {
 	html += `</span>`
 	// return the html string
 	return html
+}
+
+// To test
+// const recipe = getRandomListEntry(recipes);
+// console.log(recipeTemplate(recipe));
+
+function renderRecipes(recipeList) {
+	// get the element we will output the recipes into
+	const recipeContainer = document.querySelector("main")
+	recipeContainer.innerHTML = ''
+	// use the recipeTemplate function to transform our recipe objects into recipe HTML strings
+	// Set the HTML strings as the innerHTML of our output element.
+	recipeList.forEach(r => recipeContainer.innerHTML += recipeTemplate(r))
+
+}
+
+function init() {
+  // get a random recipe
+  const recipe = getRandomListEntry(recipes)
+  // render the recipe with renderRecipes.
+  renderRecipes([recipe]);
+}
+init();
+
+const searchRecipeButton = document.querySelector("button")
+
+searchRecipeButton.addEventListener("click", searchHandler)
+
+function sortABC(r1, r2) {
+	r1.toLowerCase().localeCompare(r2.toLowerCase())
+}
+
+function filter(query) {
+	const filtered = recipes.filter((recipe) => matchSearch(query, recipe))
+	// sort by name
+	const sorted = filtered.sort(sortABC)
+		return sorted
+}
+
+function matchSearch(query, recipe) {
+	return recipe.name.toLowerCase().includes(query) || 
+		recipe.description.toLowerCase().includes(query) ||
+		recipe.tags.includes(query) ||
+		recipe.recipeIngredient.includes(query)
+}
+
+function searchHandler(e) {
+	e.preventDefault()
+	// get the search input
+  	// convert the value in the input to lowercase
+  	const query = document.querySelector("input").value.toLowerCase();
+  	// use the filter function to filter our recipes
+	const sorted = filter(query)
+  	// render the filtered list
+
+	renderRecipes(sorted)
 }
